@@ -67,6 +67,15 @@ class ContactsController < ApplicationController
   end
 
 
+ def destroy
+  @contact = Contact.find_by(id:params["id"])
 
+   @contact.destroy
+
+   render json:{message:"The contact has been deleted"}
+
+
+
+ end
 
 end

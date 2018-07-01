@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   patch "/contacts/:id" => "contacts#update"
 
-
+  delete "/contacts/:id" => "contacts#destroy" 
 
 
 end
